@@ -1,0 +1,58 @@
+{
+  "name": "x-react-clock",
+  "description": "A custom element wrapper for react-clock.",
+  "version": "1.0.0",
+  "main": "lib/es/x-react-clock.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kherrick/x-react-clock.git"
+  },
+  "keywords": [
+    "Web Components",
+    "Custom Elements",
+    "TypeScript",
+    "React",
+    "Time",
+    "Clock"
+  ],
+  "license": "AGPL-3.0",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "scripts": {
+    "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+    "build:types": "tsc --emitDeclarationOnly",
+    "build": "npm run build:types && npm run build:js",
+    "bundle": "rimraf lib && rollup -c",
+    "type-check:watch": "npm run type-check -- --watch",
+    "type-check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@adobe/react-webcomponent": "^0.1.1",
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-proposal-class-properties": "^7.3.4",
+    "@babel/plugin-proposal-decorators": "^7.3.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.3.3",
+    "@types/react": "^16.8.8",
+    "@types/react-dom": "^16.8.2",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "rimraf": "^2.6.3",
+    "rollup": "^1.6.0",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^9.2.1",
+    "rollup-plugin-json": "^3.1.0",
+    "rollup-plugin-node-resolve": "^4.0.1",
+    "rollup-plugin-postcss": "^2.0.3",
+    "rollup-plugin-replace": "^2.1.0",
+    "typescript": "^3.3.3333"
+  },
+  "dependencies": {
+    "react-clock": "^2.3.0"
+  }
+}
