@@ -1,21 +1,36 @@
 # x-react-clock
 
-## Build
+**A custom element wrapper for react-clock.**
 
-Run `npm i && npm run bundle` to install the dependencies and bundle the source.
+## Demo an unpkg installation
 
-## Install
+Everything defined in one file, without a build step @ [https://j.mp/2Hsutor](https://j.mp/2Hsutor).
 
-After bundling, be sure to `git commit -a` to prepare for installation. Next, go to the project where x-react-clock is to be installed, and add it using `npm i git+file:///home/path/to/x-react-clock`. When x-react-clock has been included in the project, add it to the page:
+## Usage with NPM
+
+### Install
+
+```bash
+npm i x-react-clock
+```
+
+### Import
 
 ```javascript
 import * as XReactClock from 'x-react-clock'
+```
 
+### Define
+```javascript
 window.customElements.define('x-react-clock', XReactClock.default)
 ```
 
-## Usage
+### Declare
 
 ```html
 <x-react-clock rendernumbers size="150"></x-react-clock>
 ```
+
+### Style
+
+Styles are extracted from [react-clock](https://www.npmjs.com/package/react-clock) and placed in [separate css files](https://github.com/kherrick/x-react-clock/blob/master/lib/es/x-react-clock.css). Apply them, or the clock will be blank when first viewed. See [the demo]([https://j.mp/2Hsutor) for an example.
