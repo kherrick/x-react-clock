@@ -33,4 +33,4 @@ window.customElements.define('x-react-clock', XReactClock.default)
 
 ### Style
 
-Styles are extracted from [react-clock](https://www.npmjs.com/package/react-clock) and placed in [separate css files](https://github.com/kherrick/x-react-clock/blob/master/lib/es/x-react-clock.css). Apply them, or the clock will be blank when first viewed. See [the demo]([https://j.mp/2Hsutor) for an example.
+Styles are extracted from [react-clock](https://www.npmjs.com/package/react-clock) and placed in [separate css files](https://github.com/kherrick/x-react-clock/blob/master/lib/es/x-react-clock.css). Apply them, or the clock will be blank when first viewed. See [the demo](https://j.mp/2Hsutor) for an example.
